@@ -22,16 +22,10 @@ int main()
     printpathto(get_inode("."));
     // ino_t myinot = get_inode(".");
     // printf("%ld myfile \n", myinot);
-    
     // char buf[BUFSIZ];
-
     // inum_to_name(myinot, buf, BUFSIZ);
-
     // printf("file name: %s\n", buf);
     printf("\n");
-
-
-
     return 0;
 }
 void printpathto(ino_t this_inode)
