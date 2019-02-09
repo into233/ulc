@@ -92,6 +92,7 @@ void tty_mode(int how)
         original_flags = fcntl(0, F_GETFL);
     }else{
         tcsetattr(0, TCSANOW, &original_mode);
+        // original_flags &= ~O_NDELAY;//if you use ctrl+c
         fcntl(0, F_SETFL, original_flags);
     }
 }
