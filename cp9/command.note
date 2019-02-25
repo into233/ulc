@@ -1,0 +1,30 @@
+ 1507  whoami
+ 1508  read x
+ 1509  x=who am i
+ 1510  read x
+ 1511  echo $x
+ 1512  grep $x
+ 1513  grep who
+ 1514  man realloc
+ 1515  ls>d
+ 1516  ls
+ 1517  more d
+ 1518  rm d
+ 1519  who sort
+ 1520  who 
+ 1521  who | sort
+ 1522  comm
+ 1523  ls
+ 1524  cp showenv.c showenv1.c 
+ 1525  vim showenv1.c 
+ 1526  comm -13 showenv.c showenv1.c 
+ 1527  cat showenv.c | sort > 1.c
+ 1528  cat showenv1.c | sort > 2.c
+ 1529  comm -13 1.c 2.c 
+ 1530  cat 1.c 
+ 1531  cat 2.c '
+ 1532  cat 2.c
+ 1533  history | head
+ 1534  history | tail
+ 1535  history | tail - 30 > command.note
+ 1536  history | tail -n 30 > command.note

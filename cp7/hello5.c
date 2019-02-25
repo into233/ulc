@@ -23,6 +23,7 @@ int main()
         sleep(1);
         move(ROW, pos);
         addstr(blank);
+        
 
         pos += dir;
         if(pos > RIGHTEDGE){
