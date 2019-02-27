@@ -2,7 +2,7 @@
 
 #define CHILD_MESS "I want a cookie\n"
 #define PAR_MESS "TESTING....\n"
-#define oops(m, x) { perror(m);exit(x) }
+#define oops(m, x) { perror(m);exit(x); }
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
         oops("Cannot get a pipe", 1);
     }
 
-    weitch(fork()){
+    switch(fork()){
         case -1:
             oops("cannot fork", 2);
         case 0:
