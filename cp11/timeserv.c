@@ -39,7 +39,7 @@ int main(int ac, char *av[]){
     hp = gethostbyname(hostname);
 
     memcpy((void *)&saddr.sin_addr, (void *)hp->h_addr, hp->h_length);
-    saddr.sin_port = PORTNUM;
+    saddr.sin_port = htons(PORTNUM);
     saddr.sin_family = AF_INET;
 
     if(bind(sock_id, (struct sockaddr *)&saddr, sizeof(saddr)) != 0){
