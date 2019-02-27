@@ -45,7 +45,7 @@ int main(int ac, char *av[])
     
     servadd.sin_family = AF_INET;//fill in socket type
 
-    if(connect(sock_fd, (struct sockaddr *)&servadd, sizeof(servadd) != 0))
+    if(connect(sock_fd, (struct sockaddr *)&servadd, sizeof(servadd)) != 0)
     {
         oops("connect");
     }
